@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+        
+    <body>
+            <style>
+                   .error {color: red}
+                   h2 {color: #00b300}
+                </style>
+            
+        <form method="POST">
+            <h2>{{welcome}}</h2>
+            <p>Username</p>
+            <input type="text" name="username" value='{{username}}'> 
+            <p class="error">{{username_error}}</p>
+            <p class='error'>{{username_len_error}}</p>
+            <p>Password</p>
+            <input type="password" name="password" value="{{password}}"><br>
+            <p class='error'>{{null_password}}</p>
+            <p class='error'>{{password_len_error}}</p>
+            <p>Verify Password</p>
+            <input type="password" name="verify" value='{{verify}}'>
+            <p class="error">{{password_error}}</p>
+            <p class='error'>{{null_verify}}</p>
+            
+            <p>Email (Optional)</p>
+            <input type="text" name="email" value="{{email}}"><br><br>
+            <p class='error'>{{email_error}}</p>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
